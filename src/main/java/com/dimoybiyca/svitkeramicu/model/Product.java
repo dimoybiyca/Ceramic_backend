@@ -40,7 +40,7 @@ public class Product {
     @Column(name = "unit_price", nullable = false)
     private double unitPrice;
 
-    @Column(name = "image_url", columnDefinition = "default 'empty.svg'")
+    @Column(name = "image_url", columnDefinition = "varchar(100) default('empty.svg')")
     private String imageUrl;
 
     @Column(name = "status", nullable = false)
